@@ -20,3 +20,12 @@ Patika.dev'in Veri Yapıları ve Algoritmaları dersini bitirme projesidir.
 Worst Case : O(n^2)
 Avarage Case : O(n^2)
 Best Case : O(n)
+
+# 3- Time Complexity
+Best Case : [2,6,16,18,22,27]
+Worst Case : [27,22,18,16,6,2]
+
+# 4- 18 Sayısının Case Durumu
+Dizi sıralandıktan sonra [2,6,16,18,22,27] halini alır.Bu durumda 18 sayısı ortada olarak sayılabilir.
+Bu nedenle avarage case kapsamında yer alır. 
+
