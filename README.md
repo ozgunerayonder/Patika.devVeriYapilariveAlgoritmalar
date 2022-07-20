@@ -29,3 +29,98 @@ Worst Case : [27,22,18,16,6,2]
 Dizi sıralandıktan sonra [2,6,16,18,22,27] halini alır.Bu durumda 18 sayısı ortada olarak sayılabilir.
 Bu nedenle avarage case kapsamında yer alır. 
 
+# Merge Sort Projesi
+[16,21,11,8,12,22] -> Merge Sort
+1-Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+2-Big-O gösterimini yazınız.
+
+# 1- Merge Sort Aşamaları
+[16,21,11,8,12,22] ilk önce sayı dizisini ikiye böleriz.
+- [16,21,11]     [8,12,22]
+Daha sonra böldüğümüz dizileri bir daha ikiye böleriz.
+- [16,21]   [11]   [8,12]   [22]
+Elde edilen diziler 2 veya daha az eleman sayısına ulaştığı için bölme işlemini durduruz.
+Her diziyi kendi içinde sıralarız.
+- [16,21]   [11]   [8,12]   [22]
+Şimdi ise ikili olarak sıraya uygun bir şekilde diziler birleştirilir.
+- [11,16,21]   [8,12,22]
+Elde edilen diziler uygun bir şekilde bir kez daha birleştirilir.
+- [8,11,12,16,21,22]
+Ve dizi sıralı hale gelir.
+
+# 2- Big O Notation Gösterimi
+Worst case   : O(n*logn)
+Average case : O(n*logn)
+Best case    : O(n*logn)
+
+# Binary Search Tree Projesi
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+Örnek: root x'dir. root'un sağından y bulunur. Solunda z bulunur vb.
+# Binary Search Tree Aşamaları
+
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisini soldan okumaya başlıyoruz.
+Eğer okuduğumuz sayı bir önceki sayıdan büyükse sayının sağına doğru küçükse soluna doğru kök şeklinde ilerliyoruz.
+
+7
+  7
+ /
+5
+    7
+   /
+  5
+ /
+1 
+    7
+   / \
+  5   8
+ /
+1 
+    7
+   / \
+  5   8
+ / 
+1  
+ \
+  3
+    7
+   / \
+  5   8
+ / \
+1   6
+ \
+  3
+      7
+     / \
+    5   8
+   / \
+  1   6
+ / \
+0   3
+      7
+     / \
+    5   8
+   / \   \
+  1   6   9
+ / \
+0   3
+      7
+     / \
+    5   8
+   / \   \
+  1   6   9
+ / \
+0   3
+     \
+      4
+      7
+     / \
+    5   8
+   / \   \
+  1   6   9
+ / \
+0   3
+   / \
+  2   4
+
+
+
